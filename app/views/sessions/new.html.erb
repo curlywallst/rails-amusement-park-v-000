@@ -1,0 +1,8 @@
+<h3>Login Please</h3>
+
+<%= form_for :user, url: '/users' do |f| %>
+  Name: <%= f.text_field :name %><br>
+  Password: <%= f.password_field :password %><br>
+
+  <%= f.submit "Sign In" %>
+<% end %>
